@@ -1,6 +1,6 @@
-import ReactDOM from "react-dom";
 import InvoicePDF from "./Factura.jsx";
 import { PDFViewer } from "@react-pdf/renderer";
+import Formulario from "./Formulario.jsx";
 
 function App() {
 
@@ -22,9 +22,10 @@ function App() {
 
 
   return (
-    <PDFViewer width={800} height={800} >
-        <InvoicePDF data={invoiceData} />
-    </PDFViewer>
+    // <PDFViewer width={800} height={800} >
+    //     <InvoicePDF data={invoiceData} />
+    // </PDFViewer>
+      <Formulario/>
   )
 }
 

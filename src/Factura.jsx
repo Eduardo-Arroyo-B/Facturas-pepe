@@ -104,8 +104,18 @@ const InvoicePDF = ({ data }) => (
                 </View>
 
                 <View style={styles.row}>
+                    <Text style={styles.cell}>Eduardo Arroyo calle tal tal</Text>
                     <Text style={styles.cell}>09/02/2025</Text>
-                    <Text style={styles.cell}>Full stack developer</Text>
+                </View>
+
+                <View style={[styles.row, { backgroundColor: "#ddd" }]}>
+                    <Text style={styles.cell}>Contact Info</Text>
+                    <Text style={styles.cell}>Email</Text>
+                </View>
+
+                <View style={styles.row}>
+                    <Text style={styles.cell}>ejemplo de informacion de contacto</Text>
+                    <Text style={styles.cell}>aeduardoiran@yahoo.com</Text>
                 </View>
 
                 <View style={[styles.row, { backgroundColor: "#ddd" }]}>
@@ -144,7 +154,7 @@ const InvoicePDF = ({ data }) => (
             </View>
 
             {/* Tabla de pago */}
-            <View style={[styles.table2, { marginTop: 50 }]}>
+            <View style={[styles.table2, { marginTop: 10 }]}>
                 <View style={styles.row2}>
                     <Text style={[styles.cell2, styles.bold]}>1st Deposit</Text>
                     <Text style={[styles.cell2, styles.bold]}>CHECK#</Text>
