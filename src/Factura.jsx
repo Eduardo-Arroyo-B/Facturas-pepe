@@ -79,7 +79,7 @@ const InvoicePDF = ({ data }) => (
         <Page size="A4" style={styles.page}>
             {/* Encabezado */}
             <View style={styles.section}>
-                <Text style={styles.header}>REYGAR                                                INVOICE: 09128309123</Text>
+                <Text style={styles.header}>REYGAR                                                INVOICE: {data.Invoice}</Text>
                 <Text>170 MACE ST Unit# E2</Text>
                 <Text>CHULA VISTA CA 91911</Text>
                 <Text>Direct Number: 619-915-7607</Text>
@@ -87,9 +87,9 @@ const InvoicePDF = ({ data }) => (
 
             {/* Información del Cliente */}
             <View style={styles.section}>
-                <Text>Name: Jose Ortega</Text>
-                <Text>Address: calle tal tal</Text>
-                <Text>City: Tijuana Baja California</Text>
+                <Text>Name: {data.Name}</Text>
+                <Text>Address: {data.Address}</Text>
+                <Text>City: {data.City}</Text>
             </View>
 
             {/* Tabla de detalles */}
@@ -104,8 +104,8 @@ const InvoicePDF = ({ data }) => (
                 </View>
 
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Eduardo Arroyo calle tal tal</Text>
-                    <Text style={styles.cell}>09/02/2025</Text>
+                    <Text style={styles.cell}>{data.ClientName}</Text>
+                    <Text style={styles.cell}>{data.Date}</Text>
                 </View>
 
                 <View style={[styles.row, { backgroundColor: "#ddd" }]}>
@@ -114,8 +114,8 @@ const InvoicePDF = ({ data }) => (
                 </View>
 
                 <View style={styles.row}>
-                    <Text style={styles.cell}>ejemplo de informacion de contacto</Text>
-                    <Text style={styles.cell}>aeduardoiran@yahoo.com</Text>
+                    <Text style={styles.cell}>{data.ContactInfo}</Text>
+                    <Text style={styles.cell}>{data.Email}</Text>
                 </View>
 
                 <View style={[styles.row, { backgroundColor: "#ddd" }]}>
@@ -158,29 +158,29 @@ const InvoicePDF = ({ data }) => (
                 <View style={styles.row2}>
                     <Text style={[styles.cell2, styles.bold]}>1st Deposit</Text>
                     <Text style={[styles.cell2, styles.bold]}>CHECK#</Text>
-                    <Text style={styles.cell2}>AMOUNT: $1,082.82</Text>
+                    <Text style={styles.cell2}>AMOUNT: ${data.Deposit}</Text>
                 </View>
                 <View style={styles.row2}>
-                    <Text style={styles.cell2}>NOTE : Any Change Orders will be charged seperate</Text>
-                    <Text style={styles.cell2}>0.00</Text>
+                    <Text style={styles.cell2}>NOTE : Any Change Orders will be charged seperate            </Text>
+                    <Text style={styles.cell2}>${data.AdditionalChanges}</Text>
                 </View>
             </View>
 
             {/* Pago a */}
             <View style={[styles.row2, { backgroundColor: 'red', color: 'white' }]}>
-                <Text style={[styles.cell2, styles.bold]}>MAKE CHECK PAYABLE TO:                                                              </Text>
+                <Text style={[styles.cell2, styles.bold]}>MAKE CHECK PAYABLE TO:                                                                         </Text>
                 <Text style={styles.cell2}>Pablo Reyes Garcia</Text>
             </View>
 
             {/* Totales */}
             <View style={styles.table2}>
                 <View style={styles.row2}>
-                    <Text style={[styles.cell2, styles.bold]}>BALANCE DUE                                                                   </Text>
-                    <Text style={styles.cell2}>$1,082.82</Text>
+                    <Text style={[styles.cell2, styles.bold]}>BALANCE DUE                                                                         </Text>
+                    <Text style={styles.cell2}>${data.Total}</Text>
                 </View>
                 <View style={styles.row2}>
-                    <Text style={[styles.cell2, styles.bold]}>TOTAL DUE                                                                         </Text>
-                    <Text style={styles.cell2}>$1,082.82</Text>
+                    <Text style={[styles.cell2, styles.bold]}>TOTAL DUE                                                                               </Text>
+                    <Text style={styles.cell2}>${data.Total}</Text>
                 </View>
             </View>
 
