@@ -122,34 +122,34 @@ const InvoicePDF = ({ data }) => (
                     <Text style={styles.cell}>Descripción</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row1}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row2}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row3}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row4}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row5}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row6}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row7}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row8}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row9}</Text>
                 </View>
                 <View style={styles.row}>
-                    <Text style={styles.cell}>Lorem ipsum dolor sit amet</Text>
+                    <Text style={styles.cell}>{data.Row10}</Text>
                 </View>
             </View>
 

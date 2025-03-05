@@ -16,6 +16,15 @@ const formulario = () => {
         ContactInfo: "",
         Email: "",
         Row1: "",
+        Row2: "",
+        Row3: "",
+        Row4: "",
+        Row5: "",
+        Row6: "",
+        Row7: "",
+        Row8: "",
+        Row9: "",
+        Row10: "",
         Deposit: "",
         AdditionalChanges: "",
         Total: ""
@@ -51,7 +60,7 @@ const formulario = () => {
                 </div>
 
                 <label>
-                    <input required="" placeholder="" type="email" className="input" name="Address" onChange={handleChange} />
+                    <input required="" placeholder="" type="text" className="input" name="Address" onChange={handleChange} />
                     <span>Address</span>
                 </label>
 
@@ -72,7 +81,7 @@ const formulario = () => {
                     <span>Contact Info</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input" name="Email" onChange={handleChange} />
+                    <input required="" placeholder="" type="email" className="input" name="Email" onChange={handleChange} />
                     <span>Email</span>
                 </label>
                 <label>
@@ -80,39 +89,39 @@ const formulario = () => {
                     <span>Row 1</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row2" onChange={handleChange}/>
                     <span>Row 2</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row3" onChange={handleChange}/>
                     <span>Row 3</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row4" onChange={handleChange}/>
                     <span>Row 4</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row5" onChange={handleChange}/>
                     <span>Row 5</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row6" onChange={handleChange}/>
                     <span>Row 6</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row7" onChange={handleChange}/>
                     <span>Row 7</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row8" onChange={handleChange}/>
                     <span>Row 8</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row9" onChange={handleChange}/>
                     <span>Row 9</span>
                 </label>
                 <label>
-                    <input required="" placeholder="" type="text" className="input"/>
+                    <input required="" placeholder="" type="text" className="input" name="Row10" onChange={handleChange}/>
                     <span>Row 10</span>
                 </label>
                 <label>
@@ -135,7 +144,7 @@ const formulario = () => {
             {showDownload && (
                 <PDFDownloadLink
                     document={<InvoicePDF data={formData} />}
-                    fileName="factura.pdf"
+                    fileName="Factura.pdf"
                 >
                     {({ loading }) => (
                         <button className="submit">
