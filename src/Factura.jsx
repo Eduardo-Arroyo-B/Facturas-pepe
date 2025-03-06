@@ -86,11 +86,11 @@ const InvoicePDF = ({ data }) => (
             </View>
 
             {/* Información del Cliente */}
-            <View style={styles.section}>
+            {/*<View style={styles.section}>
                 <Text>Name: {data.Name}</Text>
                 <Text>Address: {data.Address}</Text>
                 <Text>City: {data.City}</Text>
-            </View>
+            </View>*/}
 
             {/* Tabla de detalles */}
             <View style={styles.table}>

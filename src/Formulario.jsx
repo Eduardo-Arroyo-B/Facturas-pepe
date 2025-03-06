@@ -8,9 +8,6 @@ const formulario = () => {
     const [showDownload, setShowDownload] = useState(false);
     const [formData, setFormData] = useState({
         Invoice: "",
-        Name: "",
-        Address: "",
-        City: "",
         ClientName: "",
         Date: "",
         ContactInfo: "",
@@ -53,21 +50,21 @@ const formulario = () => {
                         <span>Invoice</span>
                     </label>
 
-                    <label>
+                    {/*<label>
                         <input required="" placeholder="" type="text" className="input" name="Name" onChange={handleChange} />
                         <span>Name</span>
-                    </label>
+                    </label>*/}
                 </div>
 
-                <label>
+                {/*<label>
                     <input required="" placeholder="" type="text" className="input" name="Address" onChange={handleChange} />
                     <span>Address</span>
-                </label>
+                </label>*/}
 
-                <label>
+                {/*<label>
                     <input required="" placeholder="" type="text" className="input" name="City" onChange={handleChange} />
                     <span>City</span>
-                </label>
+                </label>*/}
                 <label>
                     <input required="" placeholder="" type="text" className="input" name="ClientName" onChange={handleChange} />
                     <span>Client name</span>
